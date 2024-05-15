@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Bitter", serif;
+}
+
+#sobrealoja img{
+    width: 22rem;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header,
+footer{
+    padding: 2rem 0;
+    background-color: #362c25;
+    color: #fff;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    padding: 1rem;
+}
+
+nav li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    cursor: pointer;
+    color: #c9d3da;
+}
+
+#sobrealoja{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2.2rem;
+}
+
+h2{
+    padding: 1.5rem 0;
+}
+
+h2::after{
+    content: '';
+    display: block;
+    width: 10rem;
+    height: 0.3rem;
+    background-color: #362c25;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.produtos img{
+    width: 15rem;
+    height: 19.28rem;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+}
+
+.produtos li{
+    list-style: none;
+}
+
+.produtos li a{
+    text-decoration: none;
+    color: black;
+}
+
+.produtos li a:hover{
+    cursor: pointer;
+    color: #362c25;
+}
+
+h3{
+    padding: 0.8rem 0;
+}
+
+.price{
+    margin: 1rem 0 0.5rem 0;
+}
+
+.produtos p{
+    font-size: 0.8rem;
+    font-style: italic;
+    width: 15rem;
+    height: 2.5rem;
+}
+
+button{
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    background-color: rgb(15, 133, 15);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0.1rem 0;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(13, 155, 13);
+}
+
+.contato{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.form-campo{
+    margin-bottom: 1rem;
+}
+
+.form-campo input,
+.form-campo textarea{
+    width: 100%;
+    display: block;
+    padding: 0.5rem;
+}
+
+.form-campo textarea{
+    resize: none;
+    height: 7.5rem;
+}
+
+form{
+    width: 22.5rem;
+}
+
+form button{
+    width: 7.5rem;
+    margin-top: 1rem;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img{
+    width: 2rem;
+}
+
+footer li{
+    list-style: none;
+    display: inline;
+    padding: 0.2rem;
+}
+
+.error{
+    color: red;
+    font-size: 10px;
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width:767px){ 
+    
+    #sobrealoja{
+        display: block;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .produtos{
+        display: block;
+    }
+
+    button{
+        margin-bottom: 1rem;
+    }
+
+    form{
+        width: 20rem;
+    }
+
+    footer img{
+        width: 1rem;
+    }
+
+    nav li, footer li{
+        display: block;
+        padding: 0.1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container{
+        max-width: 90%;
+    }
+
+    #sobrealoja{
+        display: block;
+    }
+
+    .produtos{
+        grid-template-columns: repeat(2,49.5%);
+        row-gap: 2rem;
+    }
+}
+
+
+
